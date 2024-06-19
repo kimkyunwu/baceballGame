@@ -60,7 +60,7 @@ public class Baceball {
         int[] answer = new int[3]; // 세 자리의 정답 배열 생성
         boolean[] used = new boolean[10]; // 사용된 숫자를 체크하기 위한 배열
         int index = 0;
-        while (index < 3) { // 세 자리의 숫자를 모두 설정할 때까지 반복 [0,1,2]
+        while (index < 3) { // 세 자리의 숫자를 모두 설정할 때까지 반복
             int num = (int) (Math.random() * 10); // 0에서 9까지 랜덤한 숫자를 생성
             if (!used[num]) { // 해당숫자가 사용되지 않은 경우
                 answer[index++] = num; // 정답 배열에 숫자 추가
